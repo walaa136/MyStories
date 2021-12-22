@@ -1,4 +1,4 @@
-package com.example.week6day1
+package com.example.mystory
 
 class User(val email:String, val password:String) {
 }

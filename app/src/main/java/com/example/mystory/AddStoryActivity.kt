@@ -1,10 +1,11 @@
-package com.example.week6day1
+package com.example.mystory
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import com.example.mystory.R
 
 class AddStoryActivity : AppCompatActivity() {
 

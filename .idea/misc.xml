@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/me1wa/AndroidStudioProjects/MyStory/app/src/main/res/layout/activity_add_story.xml" value="0.13768115942028986" />
+        <entry key="..\:/Users/me1wa/AndroidStudioProjects/MyStory/app/src/main/res/layout/activity_login.xml" value="0.13269927536231885" />
+        <entry key="..\:/Users/me1wa/AndroidStudioProjects/MyStory/app/src/main/res/layout/activity_main.xml" value="0.13269927536231885" />
+        <entry key="..\:/Users/me1wa/AndroidStudioProjects/MyStory/app/src/main/res/layout/activity_splash2.xml" value="0.13269927536231885" />
+        <entry key="..\:/Users/me1wa/AndroidStudioProjects/MyStory/app/src/main/res/layout/activity_story_details.xml" value="0.13269927536231885" />
+        <entry key="..\:/Users/me1wa/AndroidStudioProjects/MyStory/app/src/main/res/layout/custom_layout.xml" value="0.1" />
+        <entry key="..\:/Users/me1wa/AndroidStudioProjects/MyStory/app/src/main/res/layout/nav_header.xml" value="0.13269927536231885" />
         <entry key="..\:/Users/me1wa/AndroidStudioProjects/Week6Day1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/me1wa/AndroidStudioProjects/Week6Day1/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/me1wa/AndroidStudioProjects/Week6Day1/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.16111111111111112" />

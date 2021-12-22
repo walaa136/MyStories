@@ -1,4 +1,4 @@
-package com.example.week6day1
+package com.example.mystory
 
 import android.content.Context
 import android.content.Intent
@@ -9,10 +9,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mystory.R
 import java.util.*
 import kotlin.collections.ArrayList
 //                    الخاصية الثانية                        الخاصية الاولى
-class CustomAdapter(val storiesList:ArrayList<Story>,val context: Context )
+class CustomAdapter(val storiesList:ArrayList<Story>, val context: Context )
     :RecyclerView.Adapter<CustomAdapter.DataHolder>(){
 
     //  الدالة الخاصة عندي بانشاء الخلية الاساسية
@@ -50,7 +51,7 @@ class CustomAdapter(val storiesList:ArrayList<Story>,val context: Context )
     }
 
     //
-    private fun generateColors(holder: DataHolder,position: Int){// الدالة تنشئ الالوان بشكل تلقائي
+    private fun generateColors(holder: DataHolder, position: Int){// الدالة تنشئ الالوان بشكل تلقائي
         val r = Random() //   يعطينا الوان عشوائية من رقم عشوائي كلاس راندوم
         val red = r.nextInt(255+position) // 255 اعلى قيمة في الالوان اخر قيمة في الهيكساديسيمال
         val green = r.nextInt(255-position+1) //nextInt  تعطينا رقم عشوائي اللي موجود في الراندوم
@@ -68,9 +69,9 @@ class CustomAdapter(val storiesList:ArrayList<Story>,val context: Context )
     class DataHolder(item: View):RecyclerView.ViewHolder(item){ // كلاس داخلي يربط لي العناصر
     //  تعرض عناصر الخلايا
         val storyTitle:TextView = item.findViewById(R.id.tvTitle)// item خاصية الخلايا
-        val storySubTitle:TextView = item.findViewById(R.id .tvSubtitle) //R  تدل على اللي موجودة في الريسورس res
-        val storyLetter:TextView = item.findViewById(R.id .tvStoryLetter)
-        val cardViewLetter:CardView = item.findViewById(R.id .circle)
+        val storySubTitle:TextView = item.findViewById(R.id.tvSubtitle) //R  تدل على اللي موجودة في الريسورس res
+        val storyLetter:TextView = item.findViewById(R.id.tvStoryLetter)
+        val cardViewLetter:CardView = item.findViewById(R.id.circle)
 
 
     }

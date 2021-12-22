@@ -1,4 +1,4 @@
-package com.example.week6day1
+package com.example.mystory
 
 import android.content.Context
 import android.content.Intent
@@ -15,6 +15,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mystory.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 
@@ -57,11 +58,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateEmailInHeader(email:String){// استقبل الايميل داخل الواجهة
         val headerView = navigationView?.getHeaderView(0)// يعطيني وصول للناف للايميل
-        val textViewEmail = headerView?.findViewById<TextView>(R.id .tvEmail)//احتاج الايميل ابغى احدث قيمته
+        val textViewEmail = headerView?.findViewById<TextView>(R.id.tvEmail)//احتاج الايميل ابغى احدث قيمته
         textViewEmail?.text = email// اطبع لي الايميل
     }
     private fun setupDrawer(){// يتحكم باغلاق القائمة الجانبية
-        val toggle = ActionBarDrawerToggle(this,drawerLayout,R.string.open,R.string.close)
+        val toggle = ActionBarDrawerToggle(this,drawerLayout, R.string.open, R.string.close)
         drawerLayout?.addDrawerListener(toggle)
         toggle.syncState()// المزامنة الخاصة بها متى افتح متى اغلق
     }
@@ -96,7 +97,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.logout ->{
                     finish()
-                    val i = Intent(this,LoginActivity::class.java)
+                    val i = Intent(this, LoginActivity::class.java)
                     startActivity(i)
                     true
                 }
@@ -107,7 +108,7 @@ class MainActivity : AppCompatActivity() {
     private fun openAddStoryActivity(){
 
         buttonAddStory?.setOnClickListener {
-            val i = Intent(this,AddStoryActivity::class.java)
+            val i = Intent(this, AddStoryActivity::class.java)
             startActivity(i)
 
         }
@@ -117,11 +118,16 @@ class MainActivity : AppCompatActivity() {
         val storiesArray = ArrayList<Story>()
         storiesArray.add(
             Story(getString(R.string.story1_title)// ناخذ القصة من السترينق
-            ,getString(R.string.story1_subtitle),getString(R.string.story1_desc)))
-        storiesArray.add(Story("This is my second story","This is second subtitle"
-            ,"Welcome to my story I will show you how I learnt"))
-        storiesArray.add(Story("This is my third story","This is third subtitle"
-            ,"Welcome to my story I will show you how I learnt"))
+            ,getString(R.string.story1_subtitle),getString(R.string.story1_desc))
+        )
+        storiesArray.add(
+            Story("This is my second story","This is second subtitle"
+            ,"Welcome to my story I will show you how I learnt")
+        )
+        storiesArray.add(
+            Story("This is my third story","This is third subtitle"
+            ,"Welcome to my story I will show you how I learnt")
+        )
 
 
 

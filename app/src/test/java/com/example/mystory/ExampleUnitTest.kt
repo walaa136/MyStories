@@ -1,4 +1,4 @@
-package com.example.week6day1
+package com.example.mystory
 
 import org.junit.Test
 

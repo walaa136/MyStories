@@ -1,4 +1,4 @@
-package com.example.week6day1
+package com.example.mystory
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
+import com.example.mystory.R
 
 class LoginActivity : AppCompatActivity() {
 

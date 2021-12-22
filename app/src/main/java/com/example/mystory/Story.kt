@@ -1,4 +1,4 @@
-package com.example.week6day1
+package com.example.mystory
 
 class Story(val title:String, val subtitle:String, val description:String) {
 }

@@ -1,4 +1,4 @@
-package com.example.week6day1
+package com.example.mystory
 
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
+import com.example.mystory.R
 import java.util.*
 
 class StoryDetailsActivity : AppCompatActivity() {

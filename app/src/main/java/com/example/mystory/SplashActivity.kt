@@ -1,10 +1,11 @@
-package com.example.week6day1
+package com.example.mystory
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import com.example.mystory.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
         Handler(Looper.myLooper()!!).postDelayed({//هذا كلاس
             //هذه الدالة تستخدم لحذفها من الذاكرة
             finish()
-            val i = Intent(this,LoginActivity::class.java)
+            val i = Intent(this, LoginActivity::class.java)
             startActivity(i)
         },3000)// عدد الثواني اللي تكون فيه سبلاش ظاهرة
 
